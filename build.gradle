@@ -1,9 +1,10 @@
 buildscript {
     repositories {
-        mavenCentral()
+        mavenCentral()		
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.3.RELEASE")
+		
     }
 }
 
@@ -19,7 +20,7 @@ bootJar {
 }
 
 repositories {
-    mavenCentral()
+    mavenCentral()	
 }
 
 sourceCompatibility = 1.8
@@ -27,6 +28,8 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
-    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("org.springframework.boot:spring-boot-starter-test")	
+
 }
+
 
